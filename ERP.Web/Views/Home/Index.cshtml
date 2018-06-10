@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@model IEnumerable<ERP.Domain.TableInfo>
+<h2>Index</h2>
+
+<ul>
+   @foreach (var item in Model)
+   { 
+       <li><a href="Home/Detail/@item.Id">@item.Name</a></li>
+   }
+</ul>

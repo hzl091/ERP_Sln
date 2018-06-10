@@ -1,0 +1,16 @@
+E:\mytest\ERP_Sln\ERP.DAL\obj\Debug\ERP.DAL.csprojResolveAssemblyReference.cache
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.DAL.dll.config
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.DAL.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.DAL.pdb
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\EntityFramework.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.Common.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.Domain.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.Common.pdb
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\ERP.Domain.pdb
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\EntityFramework.xml
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\mytest\ERP_Sln\ERP.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\mytest\ERP_Sln\ERP.DAL\obj\Debug\ERP.DAL.dll
+E:\mytest\ERP_Sln\ERP.DAL\obj\Debug\ERP.DAL.pdb

@@ -1,0 +1,11 @@
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\ERP.Domain.dll.config
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\ERP.Domain.dll
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\ERP.Domain.pdb
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\EntityFramework.dll
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\EntityFramework.xml
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\mytest\ERP_Sln\ERP.Domain\obj\Debug\ERP.Domain.dll
+E:\mytest\ERP_Sln\ERP.Domain\obj\Debug\ERP.Domain.pdb

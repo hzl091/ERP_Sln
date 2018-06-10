@@ -1,0 +1,11 @@
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\ERP.Common.dll
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\ERP.Common.pdb
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\ERP.Domain.dll
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\ERP.Domain.pdb
+E:\mytest\ERP_Sln\ERP.Common\obj\Debug\ERP.Common.csprojResolveAssemblyReference.cache
+E:\mytest\ERP_Sln\ERP.Common\obj\Debug\ERP.Common.dll
+E:\mytest\ERP_Sln\ERP.Common\obj\Debug\ERP.Common.pdb
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\Webdiyer.MvcPager.dll
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\Webdiyer.MvcPager.xml
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+E:\mytest\ERP_Sln\ERP.Common\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
