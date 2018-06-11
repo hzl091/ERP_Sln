@@ -9,3 +9,4 @@ E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
 E:\mytest\ERP_Sln\ERP.Domain\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 E:\mytest\ERP_Sln\ERP.Domain\obj\Debug\ERP.Domain.dll
 E:\mytest\ERP_Sln\ERP.Domain\obj\Debug\ERP.Domain.pdb
+E:\mytest\ERP_Sln\ERP.Domain\obj\Debug\ERP.Domain.csprojResolveAssemblyReference.cache

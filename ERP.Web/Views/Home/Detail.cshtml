@@ -2,23 +2,12 @@
     ViewBag.Title = "Detail";
 }
 
-@*@model ERP.Common.Data.TableDataInfo*@
+
 @using Webdiyer.WebControls.Mvc
 @using System.Data;
-@model PagedList<System.Data.DataRow>
+@model  ERP.Web.Models.TableModel
 <h2>Detail</h2>
 <div id="data_list">
-    @Html.Raw(ERP.Common.HtmlHelper.ConvertDataTableToHTML((ViewBag.info as ERP.Common.Data.TableDataInfo)))
+    @Html.Raw(ERP.Common.HtmlHelper.ConvertDataTableToHTML(Model.TableInfo, Model.RequestInfo.OrderBy, Model.RequestInfo.Sort))
 </div>
-@Html.Pager(Model, new PagerOptions { PageIndexParameterName = "pageIndex", PagerItemTemplate = "{0}&nbsp;" })
-
-
-@*<div class="text-center">
-    @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "pageIndex", ContainerTagName = "ul", CssClass = "pagination", CurrentPagerItemTemplate = "<li class=\"active\"><a href=\"#\">{0}</a></li>", DisabledPagerItemTemplate = "<li class=\"disabled\"><a>{0}</a></li>", PagerItemTemplate = "<li>{0}</li>" }).AjaxOptions(a => a.SetUpdateTargetId("data_list"))
-</div>
-
-
-@section scripts
-{
-    @{Html.RegisterMvcPagerScriptResource();}
-}*@
+@Html.Pager(Model.PagedList, new PagerOptions { PageIndexParameterName = "pageIndex", PagerItemTemplate = "{0}&nbsp;" })

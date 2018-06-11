@@ -24,21 +24,40 @@ namespace ERP.Web.Controllers
         //
         // GET: /Home/Details/5
 
-        public ActionResult Detail(int id, int pageIndex = 1)
+        public ActionResult Detail(int id, string orderBy = "ID", string sort = "DESC", int pageIndex = 1)
         {
-            //var tableDataInfo = repository.GetTableData(id);
-            //return View(tableDataInfo);
            int pageSize = 20;
            var tabInfo = repository.GetTableInfo(id);
-           var pagerInfo = ERP.DAL.SqlHelper.GetPagerData(tabInfo.Name, tabInfo.GetColumnSql(), null, "ID DESC", pageIndex, pageSize);
 
+            string orderInfo = "";
+            if (string.IsNullOrEmpty(orderBy) || string.IsNullOrEmpty(sort))
+            {
+                orderInfo = "ID DESC";
+            }
+            else
+            {
+                orderInfo = string.Format("{0} {1}", orderBy, sort);
+            }
+
+           var pagerInfo = ERP.DAL.SqlHelper.GetPagerData(tabInfo.Name, tabInfo.GetColumnSql(), null, orderInfo, pageIndex, pageSize);
            TableDataInfo info = new TableDataInfo();
            info.TableData = pagerInfo.PagerData;
            info.TableInfo = tabInfo;
 
+            
            PagedList<DataRow> arts = new PagedList<DataRow>(pagerInfo.PagerData.Select(), pageIndex, pageSize, pagerInfo.RecordCount);
-           ViewBag.info = info;
-           return View(arts);
+           Models.TableModel model = new Models.TableModel();
+
+           var requestInfo = new Models.RequestInfo();
+            requestInfo.OrderBy = orderBy;
+            requestInfo.Sort = sort;
+            requestInfo.PageIndex = pageIndex;
+
+           model.PagedList = arts;
+           model.TableInfo = info;
+           model.RequestInfo = requestInfo;
+
+           return View(model);
         }
 
         //

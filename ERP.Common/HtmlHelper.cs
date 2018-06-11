@@ -12,7 +12,7 @@ namespace ERP.Common
 {
     public class HtmlHelper
     {
-        public static string ConvertDataTableToHTML(TableDataInfo tableDataInfo)
+        public static string ConvertDataTableToHTML(TableDataInfo tableDataInfo, string orderBy, string sort)
         {
             DataTable dt = tableDataInfo.TableData;
             TableInfo t = tableDataInfo.TableInfo;
@@ -21,7 +21,24 @@ namespace ERP.Common
             //add header row
             html += "<tr>";
             for (int i = 0; i < dt.Columns.Count; i++)
-                html += string.Format("<td><a href=\"?sortby={1}\">{0}</a></td>", t.GetColumnDesc(dt.Columns[i].ColumnName), dt.Columns[i].ColumnName);
+            { 
+                string colName = dt.Columns[i].ColumnName;
+                if (orderBy.ToLower().Equals(colName.ToLower()))
+                {
+                    if (sort.ToLower().Equals("asc"))
+                    {
+                        html += string.Format("<td><a href=\"?orderby={1}&sort={2}\">{0}</a></td>", t.GetColumnDesc(colName), colName, "DESC");
+                    }
+                    else
+                    {
+                        html += string.Format("<td><a href=\"?orderby={1}&sort={2}\">{0}</a></td>", t.GetColumnDesc(colName), colName, "ASC");
+                    }
+                }
+                else
+                {
+                    html += string.Format("<td><a href=\"?orderby={1}&sort={2}\">{0}</a></td>", t.GetColumnDesc(colName), colName, "DESC");
+                }
+            }
             html += "</tr>";
             //add rows
             for (int i = 0; i < dt.Rows.Count; i++)
